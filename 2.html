@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var card=document.createElement("div");
+        card.style.width="200px";
+        card.style.margin="50px"
+        card.style.marginLeft="500px"
+        var imag=document.createElement("img");
+        imag.style.width="200px";
+        imag.setAttribute("src","https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg");
+        var h4=document.createElement("h4");
+        h4.innerText="men's clothing";
+        var hr1=document.createElement("hr");
+        var p1=document.createElement("p");
+        p1.innerText="Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday";
+        var pr=document.createElement("h5");
+        pr.innerText="109.95";
+        card.style.border="2px solid black";
+        var btn=document.createElement("button");
+        btn.innerText="see more"
+        btn.style.marginBottom="20px";
+        btn.style.marginLeft="50px";
+        card.append(imag,h4,hr1,p1,pr,btn);
+        document.body.appendChild(card);
+        var card1=document.createElement("div");
+        card1.style.width="200px";
+        card1.style.margin="50px"
+        card1.style.marginLeft="500px"
+        var imag1=document.createElement("img");
+        imag1.style.width="200px";
+        imag1.setAttribute("src","https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg");
+        var h41=document.createElement("h4");
+        h41.innerText="men's clothing";
+        var hr11=document.createElement("hr");
+        var p11=document.createElement("p");
+        p11.innerText="Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday";
+        var pr1=document.createElement("h5");
+        pr1.innerText="10.21";
+        card1.style.border="2px solid black";
+        var btn1=document.createElement("button");
+        btn1.innerText="see more"
+        btn1.style.marginBottom="20px";
+        btn1.style.marginLeft="50px";
+        card1.append(imag1,h41,hr11,p11,pr1,btn1);
+        document.body.appendChild(card1);
+        btn.addEventListener("click",function(){
+            window.sessionStorage.setItem("img",JSON.stringify("https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"));
+            window.open("./display.html");
+        })
+        btn1.addEventListener("click",function(){
+            window.sessionStorage.setItem("img",JSON.stringify("https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"));
+            window.open("./display.html");
+        })
+    </script>
+</body>
+</html>
